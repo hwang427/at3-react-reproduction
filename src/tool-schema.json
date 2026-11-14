@@ -1,0 +1,14 @@
+{
+  "search_sources": {
+    "description": "在固定来源包中按标签全匹配搜索。返回 id、议题和标题。",
+    "parameters": {"type":"object","properties":{"terms":{"type":"array","items":{"type":"string"},"minItems":1}},"required":["terms"],"additionalProperties":false}
+  },
+  "read_source": {
+    "description": "读取本轮搜索返回的一个来源 ID，取得文献事实和定位。",
+    "parameters": {"type":"object","properties":{"source_id":{"type":"string"}},"required":["source_id"],"additionalProperties":false}
+  },
+  "write_brief": {
+    "description": "读取三份来源后，把一页 Markdown 简报写入固定文件 final-brief.md。",
+    "parameters": {"type":"object","properties":{"markdown":{"type":"string","minLength":1}},"required":["markdown"],"additionalProperties":false}
+  }
+}

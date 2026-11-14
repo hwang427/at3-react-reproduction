@@ -1,0 +1,7 @@
+[
+  {"id":"S01","topic":"行动策略","title":"ReAct","year":2023,"venue":"ICLR","locator":"§2、§3.3、表 1","url":"https://arxiv.org/html/2210.03629","tags":["agent","评估","观察"],"claim":"ReAct 将文字推理与工具行动交织，用环境观察更新计划。HotpotQA 精确匹配率为 27.4%，Act 为 25.7%。"},
+  {"id":"S02","topic":"任务完成","title":"WebArena","year":2024,"venue":"ICLR","locator":"§3、§5、表 2","url":"https://proceedings.iclr.cc/paper_files/paper/2024/file/4410c0711e9154a7a2d26f9b3816d1ef-Paper-Conference.pdf","tags":["agent","评估","终态"],"claim":"WebArena 在模拟网站中通过功能性检查评估任务。最佳 GPT-4 Agent 的端到端成功率为 14.41%，人类为 78.24%。"},
+  {"id":"S03","topic":"重复可靠性","title":"τ-bench","year":2025,"venue":"ICLR","locator":"§2–3、图 4","url":"https://proceedings.iclr.cc/paper_files/paper/2025/file/1b126cc38b8638e07bef37e7b2bb72bf-Paper-Conference.pdf","tags":["agent","评估","可靠性"],"claim":"τ-bench 比对会话结束后的数据库状态，并用 pass^k 衡量 k 次试验均成功的可靠性。论文报告 GPT-4o 的零售 pass^8 低于 25%。"},
+  {"id":"D01","topic":"压缩","title":"合成干扰项：图像归档压缩","tags":["评估","压缩"],"claim":"这一条用于检验搜索对非 Agent 主题的排除。"},
+  {"id":"D02","topic":"时延","title":"合成干扰项：静态网页加载时延","tags":["时延","网页"],"claim":"这一条用于检验搜索对共享网页语境的排除。"}
+]
