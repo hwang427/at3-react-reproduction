@@ -3,7 +3,7 @@
 | 作業 | 查閱材料 |
 | --- | --- |
 | **AT3 ② 技術復現** | [復現說明](复现说明.md) · [模型對照報告](模型对照报告.md) · [規則復現程式](reproduce.py) · [同模型實驗程式](model_experiment.py) · [逐題結果](model-results/evaluation.csv) · [結果截圖](model-results/result.png) |
-| **AT4 期末整合報告** | 論文 PDF 隨課程作業提交 · [環境依賴](requirements.txt) · [程式和資料](src/) · [實驗結果](results/) |
+| **AT4 期末整合報告** | [論文 PDF](paper.pdf) · [環境依賴](requirements.txt) · [程式和資料](src/) · [實驗結果](results/) |
 
 AT3 ① 文獻綜述與 ③ Agent 工作任務的原始材料隨 AT3 作業提交。[③ 簡報](results/budget-final-brief.md) · [工具軌跡](results/budget-trajectory.jsonl) · [工具回傳](results/budget-tool-results.jsonl) · [驗收結果](results/budget-evaluation.csv)
 
