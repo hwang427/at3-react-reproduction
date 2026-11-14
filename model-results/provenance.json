@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "local_weights_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "decoding": "greedy",
+  "dtype": "float32",
+  "device": "cpu",
+  "threads": 4,
+  "max_rounds": 5,
+  "max_new_tokens_per_round": 96,
+  "python": "3.13.5",
+  "torch": "2.14.1",
+  "transformers": "5.20.2",
+  "cases_sha256": "d3e23fbd776e9d907b14ad753c042b565c1cfda4dc040e28ed4622fab94eb79f",
+  "script_sha256": "1762ecfbb057809903cd62389e426680925634ae5336dca536bbbf109238c3af",
+  "tool_code_sha256": "10b7643e2b8886f9cb7fbc10457421f7764259c68c81990a726a9b136523ea42",
+  "prompts": {
+    "act": "根据资料回答项目负责机构所在区。每轮只调用一个工具。\nSearch[标题]：返回页面摘要，并设置当前页面。\nLookup[字段]：在当前页面中查找字段，例如 Lookup[所在区]。\nFinish[答案]：提交所在区名称并结束。\nSearch 需要精确的标题。最终答案只写区名。\n只输出 Action: 行。\n示例问题：湖镜计划的负责机构位于哪个区？\nAction: Search[湖镜计划]\nObservation: 负责机构=湖光研究组。\nAction: Search[湖光研究组]\nObservation: 建立于湖岸。\nAction: Lookup[所在区]\nObservation: 所在区=镜湖区。\nAction: Finish[镜湖区]",
+    "react": "根据资料回答项目负责机构所在区。每轮只调用一个工具。\nSearch[标题]：返回页面摘要，并设置当前页面。\nLookup[字段]：在当前页面中查找字段，例如 Lookup[所在区]。\nFinish[答案]：提交所在区名称并结束。\nSearch 需要精确的标题。最终答案只写区名。\n先输出一句简短的 Thought:，再输出 Action:。\n示例问题：湖镜计划的负责机构位于哪个区？\nThought: 先查项目页。\nAction: Search[湖镜计划]\nObservation: 负责机构=湖光研究组。\nThought: 根据观察，查湖光研究组。\nAction: Search[湖光研究组]\nObservation: 建立于湖岸。\nThought: 摘要缺少区名，回查当前页。\nAction: Lookup[所在区]\nObservation: 所在区=镜湖区。\nThought: 已有区名，提交。\nAction: Finish[镜湖区]"
+  }
+}

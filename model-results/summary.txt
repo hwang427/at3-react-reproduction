@@ -1,0 +1,8 @@
+Model: Qwen/Qwen2.5-0.5B-Instruct | CPU | greedy | 5 rounds | 12 paired cases
+act   EM=4/12 (33.3%)  calls=21  Lookup=5
+  budget_exhausted: 1
+  invalid_action_format: 7
+react EM=7/12 (58.3%)  calls=51  Lookup=8
+  budget_exhausted: 2
+  wrong_answer_after_evidence: 1
+  wrong_answer_without_evidence: 2
