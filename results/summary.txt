@@ -1,0 +1,11 @@
+AT3 / 02  ReAct offline reproduction
+Cases: 12 | Tool budget per run: 5
+
+Policy       Exact match        Lead       Body       Calls
+act           4/12 ( 33.3%)         4/4        0/8        36
+react        12/12 (100.0%)         4/4        8/8        44
+
+Paper Table 1 (HotpotQA EM): Act 25.7% | ReAct 27.4%
+Local: synthetic data and rule policies; scores are not comparable.
+
+Wrote evaluation.csv and trajectory.jsonl.
