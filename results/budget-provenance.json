@@ -1,0 +1,34 @@
+{
+  "task_id": "at3-evidence-brief-v1",
+  "fixture_origin": "本作业自建。S01–S03 为Codex 辅助整理的论文摘要卡，D01–D02 为合成干扰项。",
+  "artifact_origin": "Codex 辅助查证论文并编写资料卡和代码。简报、轨迹、工具结果和评分由实际离线执行生成。",
+  "policy": "deterministic_rule_controller",
+  "runtime_model": null,
+  "runtime_api": null,
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "conditions": [
+    {
+      "run_id": "steps-3",
+      "max_steps": 3
+    },
+    {
+      "run_id": "steps-6",
+      "max_steps": 6
+    }
+  ],
+  "input_sha256": {
+    "task-contract.json": "75d02734ca0075f59d746a34d86f03575783f2e1b78c4036e05ae611b8e5fe7d",
+    "tool-schema.json": "6221b922f4cebc511ae44c18b39dc3c7b781d8ec419b2ee68a02369585c935d2",
+    "sources.json": "58eaa43f38db249654284114e79f44951b216ff28279aa1a8542db97b78dd6b4",
+    "run_agent.py": "d84f2ecac23671d5b616065172e1931a97cde6bb2fbd98c5b9ac17dae1df9070",
+    "validate.py": "5209f82d3a7d2e0d22671425728114bc2a89fdd23da5595fe80b23f92b10d7f1"
+  },
+  "output_sha256": {
+    "trajectory.jsonl": "b53492323d513c2c4ed2ec82f631dca01b49a230ebc8e392e94b3861017dc2f1",
+    "tool-results.jsonl": "0568d14d39e5fdbde92f40ed56113dfa261c73acd100cca0bf517a57de6d19b9",
+    "evaluation.csv": "dce1cdb2335827a5a07d79d69dda24a4bdc342aa80f751a81aa80124aed718e1",
+    "final-brief.md": "631b858d51b25d7473212e57d47ec530d6240bc6c3a6473851a925b6dbd878bc",
+    "steps-6/final-brief.md": "631b858d51b25d7473212e57d47ec530d6240bc6c3a6473851a925b6dbd878bc"
+  }
+}
